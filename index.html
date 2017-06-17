@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-theme.css">
+    <!-- Bootstrap and CSS here-->
+
+  </head>
+  <body>
+
+      <div id='app' class='center' class='container'>
+
+        <div id='headers'>
+          <!-- Title and subtitles! -->
+          <h1 id='title'> Rav's Cheesy Guessing Game! </h1>
+          <h2 id='subtitle'> Guess A Number Between 1-100, You Won't </h2>
+        </div>
+
+        <div id='main'>
+          <div id='input-parent'>
+            <!-- Player's guess input, and submit button -->
+            <input id='player-input' class='center' placeholder="#" autofocus maxlength=2></input>
+            <button id='submit-button' type=submit>Go!</button>
+          </div>
+
+          <div id='guesses'>
+            <ul id='guess-list'>
+              <li class='guess'>_</li>
+              <li class='guess'>_</li>
+              <li class='guess'>_</li>
+              <li class='guess'>_</li>
+              <li class='guess'>_</li>
+            </ul>
+            <!-- unordered list of guesses -->
+          </div>
+
+          <div id="menu-btns">
+            <!-- reset and hint buttons -->
+            <button id='reset' class='btn btn-warning btn-sm'>Reset</button>
+            <button id='hint' class='btn btn-primary btn-sm'>Hint</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id='footer' class='center' class="container">
+        <div class="row">
+          <div class='col-md-4 col-sm-4'>
+            <img src='fa-logo@2x.png'>
+          </div>
+
+          <div class='col-md-4 col-sm-4'>
+            <h4>Project by Ravish Rawal</h4>
+          </div>
+
+          <div class='col-md-4 col-sm-4'>
+            <img src='grace_hopper_academy.png'>
+          </div>
+
+        </div>
+    </div>
+    <script type='text/javascript' src='jquery.min.js'></script>
+    <script type='text/javascript' src='GuessingGameFinal.js'></script>
+  </body>
+</html>
